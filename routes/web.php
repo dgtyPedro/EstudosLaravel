@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +15,25 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/home/{texto}', function ($texto) {
+    echo view('index');
+    echo $texto;
+});
+
+Route::view('/home', 'index');
+
+Route::get('/base', function () {
+    echo url('/');
+});
+/* REGEX */
+
+Route::get('/variavel/{string}', function ($string){
+    echo 'o secret é uma palavra ' . $string;
+})->where('string', '[a-z]+');
+
+
+Route::get('/variavel/{number}', function ($number){
+    echo 'o secret é um numero ' . $number;
 });
