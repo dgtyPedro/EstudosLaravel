@@ -68,6 +68,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Anotações [Temporárias]
 
 ## Comparações ao CodeIgniter em Questão de Estrutura
-controllers -> routes
-views -> resoures/views
-models ->app/Models
+controllers -> routes </br>
+views -> resoures/views </br>
+models ->app/Models </br>
