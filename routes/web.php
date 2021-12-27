@@ -18,10 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
 Route::get('Controllers', [EstudosController::class, 'index']);
 
+Route::get('Request', [EstudosController::class, 'request']);
+Route::post('Request', [EstudosController::class, 'request']);
 
 
 
