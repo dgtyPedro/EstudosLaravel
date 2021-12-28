@@ -1,0 +1,12 @@
+body{
+    padding: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #171923;
+}
+
+.main{
+    margin-left: 300px;
+    overflow-wrap: break-word;
+    
+}
