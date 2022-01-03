@@ -17,6 +17,18 @@ use App\Http\Controllers\Home;
 
 Route::get('/', [Home::class, 'index']);
 
+Route::get('/estrutura', [Home::class, 'estrutura']);
+
+Route::get('/rotas', [Home::class, 'rotas']);
+
+Route::get('/controllers', [Home::class, 'controllers']);
+
+Route::get('/views&blade', [Home::class, 'viewsandblade']);
+
+Route::get('/models', [Home::class, 'models']);
+
+Route::get('/crud', [Home::class, 'crud']);
+
 
 
 

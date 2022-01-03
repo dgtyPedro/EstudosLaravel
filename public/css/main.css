@@ -6,7 +6,26 @@ body{
 }
 
 .main{
-    margin-left: 300px;
+    margin-left: 390px;
     overflow-wrap: break-word;
-    
+    margin-right: 100px;
+    line-height: 25px;
 }
+
+a:visited{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
