@@ -24,6 +24,9 @@
 
 <h2>Sobre as pastas</h2>
 <p>Eu poderia ficar aqui falando sobre o que cada partezinha do Laravel faz mas o <a href="https://blog.especializati.com.br/">blog especializati</a> fez um trabalho muito legal já. Irei 
-    linkar a leitura <a href="https://blog.especializati.com.br/estrutura-do-framework-php-laravel/">AQUI caso</a> seja de interesse, 
+    linkar a leitura <a href="https://blog.especializati.com.br/estrutura-do-framework-php-laravel/" style="text-decoration:underline;">AQUI</a> caso seja de interesse. Mas de cara conseguimos já 
+    ver a robustez geral das pastas do Laravel, por mais que eu gostei mais da organização geral do CI4, onde as pastas de controllers, models e views se localizam dentro de uma pasta comum ao contrário do 
+    Laravel onde elas estão espalhadas pela root o Laravel consegue atender todas as necessidades e muitas das vezes até melhor que o Igniter. No início pode ser um pouco mais confuso tendo em vista que a curva de aprendizagem é consideravelmente maior 
+    mas esse esforço se paga com projetos mais sofisticados. 
 </p>
 @endsection
