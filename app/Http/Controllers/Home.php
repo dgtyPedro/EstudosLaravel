@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class Home extends Controller
 {
@@ -32,6 +33,7 @@ class Home extends Controller
     }
 
     public function crud(){
-        echo view('crud');
+        $data['roadmap'] = DB::select('SELECT * FROM roadmap');
+        echo view('crud', $data);
     }
 }
