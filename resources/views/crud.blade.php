@@ -21,11 +21,12 @@ input{
     border-radius: 3px;
     background-color: #18141c;
     color: white;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 input::placeholder{
-  color: white;
+  color: grey;
   text-align: center;
 }
 
@@ -33,7 +34,7 @@ input::placeholder{
   color: #FF2D20;
   font-weight: bold;
   height: 40px;
-  background-color: white;
+  background-color: transparent;
 }
 
 
@@ -51,20 +52,34 @@ input::placeholder{
 
     @if(count($roadmap) > 0)
         @foreach ($roadmap as $r)
-        <form method="GET">
+        <form method="POST" action="{{route('crud.edit')}}">
+          @csrf  
+          @method('POST')
+          <input type="hidden" value="{{$r->id}}" name="id">
           <td>{{$r->id}}</td>
-          <td><input placeholder="{{$r->subject_name}}" name="subject_name"></td>
-          <td><input placeholder="{{$r->type}}" name="type"></td>
-          <td><input placeholder="{{$r->time_expected}}" name="time_expected"></td>
-          <td><input placeholder="{{$r->is_completed}}" name="is_completed"></td>
+          <td><input value="{{$r->subject_name}}" name="subject_name"></td>
+          <td><input value="{{$r->type}}" name="type"></td>
+          <td><input value="{{$r->time_expected}}" name="time_expected"></td>
+          <td><input value="{{$r->is_completed}}" name="is_completed"></td>
           <td><input type="submit" class="button" value="Submit Changes"></td>
-          <td><a href="edit/"><button class="button">Delete</button></a></td>
         </form>
+          <td><a href="{{route('crud.del')}}"><button class="button">Delete</button></a></td>
         @endforeach  
     @else 
       No records found.
     @endif
-    
+  </tr>
+  <tr>
+    <form method="POST">
+      @csrf  
+      @method('POST')
+      <td></td>
+      <td><input placeholder="Subject_Name" name="subject_name" required></td>
+      <td><input placeholder="Type" name="type" required></td>
+      <td><input placeholder="Time_Expected" name="time_expected" required></td>
+      <td><input placeholder="Is_Completed" name="is_completed" required></td>
+      <td><input type="submit" class="button" value="Create" required></td>
+    </form>
   </tr>
 </table>
 

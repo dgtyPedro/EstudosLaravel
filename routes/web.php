@@ -32,11 +32,11 @@ Route::get('/models', [Home::class, 'models']);
 Route::prefix('/crud')->group(function(){
     Route::get('/', [Home::class, 'crud']);
 
-    Route::post('/add', [Home::class, 'crud']);
+    Route::post('add', [Home::class, 'crud'])->name('crud.add');
 
-    Route::post('/edit/{id}', [Home::class, 'crud']);
+    Route::post('edit', [Home::class, 'crud'])->name('crud.edit');
 
-    Route::post('/delete/{id}', [Home::class, 'crud']);
+    Route::post('delete', [Home::class, 'crud'])->name('crud.del');
 });
 
 
