@@ -36,7 +36,7 @@ Route::prefix('/crud')->group(function(){
 
     Route::post('edit', [Home::class, 'crud'])->name('crud.edit');
 
-    Route::post('delete', [Home::class, 'crud'])->name('crud.del');
+    Route::get('delete', [Home::class, 'crud'])->name('crud.del');
 });
 
 

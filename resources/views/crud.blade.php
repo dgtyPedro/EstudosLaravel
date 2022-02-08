@@ -48,10 +48,11 @@ input::placeholder{
     <th>Time_Expected</th>
     <th>Is_Completed</th>
   </tr>
-  <tr>
+
 
     @if(count($roadmap) > 0)
         @foreach ($roadmap as $r)
+        <tr>
         <form method="POST" action="{{route('crud.edit')}}">
           @csrf  
           @method('POST')
@@ -63,14 +64,16 @@ input::placeholder{
           <td><input value="{{$r->is_completed}}" name="is_completed"></td>
           <td><input type="submit" class="button" value="Submit Changes"></td>
         </form>
-          <td><a href="{{route('crud.del')}}"><button class="button">Delete</button></a></td>
+     
+        <td><a href="{{route('crud.del') . '?id=' . $r->id}}"><button class="button">Delete</button></a></td>
+      </tr>
         @endforeach  
     @else 
       No records found.
     @endif
-  </tr>
+
   <tr>
-    <form method="POST">
+    <form method="POST" action="{{route('crud.add')}}">
       @csrf  
       @method('POST')
       <td></td>
