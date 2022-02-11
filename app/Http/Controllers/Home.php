@@ -63,6 +63,5 @@ class Home extends Controller
     public function eloquent(){
         $eloquent = new CrudModel;
         echo view('eloquent');
-
     }
 }

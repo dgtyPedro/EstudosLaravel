@@ -16,10 +16,13 @@
 <div class="row" style="width: 100%; ">
     <div class="col" style="width: 100%; margin-right: 1vw; border-right: 2px solid white;">
         <h3>Sintaxe com uma Query de Controlador comum:</h3>
-        <p> teste</p>
+    $sql=DB::table('roadmap')<br/>->where('id', '=', $_GET['id'])<br/>->delete();
     </div>
     <div class="col" style="width: 100%; margin-left: 1vw; ">
         <h3>Sintaxe com um Model usando Eloquent ORM</h3>
+$sql = Roadmap::find($_GET['id']);<br/>
+$sql->delete();
+
     </div>
 </div>
 @endsection
