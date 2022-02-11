@@ -39,6 +39,8 @@ Route::prefix('/crud')->group(function(){
     Route::get('delete', [Home::class, 'crud'])->name('crud.del');
 });
 
+Route::get('/eloquent', [Home::class, 'eloquent']);
+
 
 
 

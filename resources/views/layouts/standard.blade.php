@@ -39,6 +39,10 @@
             <li>
                 <a href="crud">Crud Simples</a> 
             </li>
+            <li>
+                <a href="eloquent">Eloquent ORM e Models</a> 
+            </li>
+
 
         </ul>
     </div>

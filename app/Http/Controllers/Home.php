@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\CrudModel;
 
 class Home extends Controller
 {
@@ -57,5 +58,11 @@ class Home extends Controller
         
         $data['roadmap'] = DB::select('SELECT * FROM roadmap');
         echo view('crud', $data);
+    }
+
+    public function eloquent(){
+        $eloquent = new CrudModel;
+        echo view('eloquent');
+
     }
 }
