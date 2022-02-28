@@ -16,6 +16,6 @@ no Laravel, fazendo toda a logística, pegando dados nos Models e enviando vári
 </p>
 
 <h2>Exemplo</h2>
-<img src="{{asset('img/codepretty.png')}}" style="width: 50%"/>
+<img src="{{secure_asset('img/codepretty.png')}}" style="width: 50%"/>
 
 @endsection
