@@ -34,9 +34,6 @@
                 <a href="views&blade">Views e Blade</a> 
             </li>
             <li>
-                <a href="models">Models</a> 
-            </li>
-            <li>
                 <a href="crud">Crud Simples</a> 
             </li>
             <li>
