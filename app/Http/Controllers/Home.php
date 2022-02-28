@@ -57,7 +57,7 @@ class Home extends Controller
         // }
         
         // $data['roadmap'] = DB::select('SELECT * FROM roadmap');
-        echo view('crud', $data);
+        echo view('crud');
     }
 
     public function eloquent(){
