@@ -31,7 +31,6 @@
     a melhor opção.</p>
         <hr/>
         <h2>E o Lumen?</h2>
-        <p>O Lumen é quase como se fosse um next-step do Laravel, é um framework criado pela mesma empresa porém mais portátil, quase como um Laravel 
-            mais sofisticadinho é uma das ferramentas que quem sabe, é diferenciado no mercado e provavelmente vai ser minha próxima técnologia para aprender.
+        <p>O Lumen é um framework criado pela mesma empresa do Laravel porém mais "portátil", é ótimo para aplicações de uma só função.
         </p>
 @endsection            
