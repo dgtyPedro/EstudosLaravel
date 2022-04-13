@@ -46,6 +46,9 @@
             <li>
                 <a href="eloquent">Eloquent ORM e Models</a> 
             </li>
+            <li>
+                <a href="https://github.com/dgtyPedro">Ir para meu GitHub</a> 
+            </li>
 
 
         </ul>
